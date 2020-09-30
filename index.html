@@ -45,21 +45,36 @@ h2{
    font-size: smaller;
 }
 
-#nav-bar
+.nav-bar
 {
-    width:auto;
+    display: grid;
+    min-height: 100px;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    justify-self: center;
+    max-height: 50px;
 }
-#home{
-    width: 33%;
-    background-color: turquoise;
+.home{
+    width: 100px;
+    background: turquoise;
+    justify-self: center;
+    max-height: 50px;
+    text-align: center;
 }
-#projects{
-    width: 33%;
-    background-color: violet;
+.projects{
+    width: 100px;
+    background: violet;
+    justify-self: center;
+    max-height: 50px;
+    text-align: center;
 }
-#contact{
-    width: 33%;
-    background-color: yellow;
+.contact{
+    width: 100px;
+    background: yellow;
+    justify-self: center;
+    max-height: 50px;
+    text-align: center;
 
 }
     </style>
@@ -75,10 +90,10 @@ h2{
 </header>
 <br>
 <nav>
-<div id="nav-bar">
-    <div id="home">   </div>
-    <div id="projects">   </div>
-    <div id="contact">   </div>
+<div class="nav-bar">
+    <div class="home">  home </div>
+    <div class="projects"> projects  </div>
+    <div class="contact">  contact </div>
 </div>
 </nav>
 <main></main>

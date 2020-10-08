@@ -30,7 +30,7 @@
         
     }
     #main{
-        display: grid;
+        display: block;
         background-color: rgba(214, 169, 109, 0.45);
         width: 80%;
         height: auto;
@@ -41,7 +41,7 @@
     } 
     .img-div{
     max-width: 80%;
-    height: auto;
+
     margin-top:10px;
     margin-bottom: 25px;
     background-color: rgba(129, 90, 38, 0.3);
@@ -56,9 +56,11 @@
         
     }
 
-    img{
+    #image{
         max-width: 40%;
         height: auto;
+        display: block;
+        margin:auto;
     }
     
     .tribute-info{
@@ -68,8 +70,10 @@
         margin-bottom: 50px;
     }
     .list{
-        text-align:justify;
+        text-align:left;
+        max-width: 35%;
         margin:auto;
+        line-height: 1.6;
     }
     </style>
     <body id="body">
@@ -84,7 +88,7 @@
         
         <div class="tribute-info" id="tribute-info"><strong>Nikola Tesla</strong> was an undeniable genius. His reclusive nature, no doubt, contributed to Edison overshadowing his work. <i>Some people might even argue that Edison stole many ideas from Tesla.</i> In spite of all his notable discoveries and accomplishments he did penniless and alone. <a href="https://en.wikipedia.org/wiki/Nikola_Tesla" target="_blank" id="tribute-link">Click here to read more about Nikola Tesla</a> </div>
         <div class="list">
-            <div id="#"><strong>Life of Tesla</strong></div>
+            <div id="#"><center><strong>Life of Tesla</strong></center></div>
             <ul>
                 <li>1</li>
                 <li>2</li>

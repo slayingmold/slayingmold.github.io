@@ -47,7 +47,7 @@ form{
             <input type="number" name="age" id="number" min="13" max="99" class="form-control" placeholder="Age">
         </div>
         <div class="form-group">
-            <p>Which option best describes your current role?</p>
+            <p>Which game are you planning to primarily play at the event?</p>
             <select id="dropdown" name="role" class="form-control" required="">
                 <option disabled="" selected="" value="">Which game are you planning to primarily play at the event?</option>
                 <option value="student">Rocket League</option>
@@ -61,7 +61,19 @@ form{
                 <option value="other">I will participate in tabletop events.</option>
             </select>
         </div>
-        <div></div>
+        <div class="form-group">
+            <p>What will be your primary source of caffiene?</p>
+            <label>
+                <input name="user-recommend" value="Coffee" type="radio" class="input-radio" checked="">Coffee</label>
+            <label>
+                <input name="user-recommend" value="Rockstar" type="radio" class="input-radio">Rockstar</label>
+            <label>
+                <input name="user-recommend" value="Monster" type="radio" class="input-radio">Monster</label>
+            <label>
+                <input name="user-recommend" value="Red Bull" type="radio" class="input-radio">Red Bull</label>
+            <label>
+                <input name="user-recommend" value="other" type="radio" class="input-radio">Other</label>
+        </div>
         <div></div>
         <div class="form-group"></div>
     </form>

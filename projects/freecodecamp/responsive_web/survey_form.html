@@ -11,6 +11,9 @@ body{
     font-weight: 300;
     text-shadow:.04em .05em rgba(0, 0, 0, 0.7);
     color:black;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
 
     
 }
@@ -23,13 +26,11 @@ body{
     color: white;
 }
 form{
-    background-color: gold;
+    background-color: rgba(129, 128, 36, 0.623);
     border-radius: .35rem;
-    max-width: 750px;
-    margin: auto;
-    padding: 2.5rem;
+    max-width: 55%;
+    padding: 1.5rem;
     align-items: center;
-    text-align: center;
     height: auto;
 }
 #form{
@@ -37,24 +38,41 @@ form{
 }
 #survey-form{
     margin: auto;
-}.form-group{
+}
+.form-group{
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
 }
 label{
     display: flex;
-    align-items: center;
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
+
 }
 input{
     margin: 0;
+    width: 100%;
 }
+#dropdown{
+    width: 100%;
+}
+
 #comments{
-    width: 650px;
+    width: 100%;
     height: 150px;
+    align-items: center;
 
 }
+.submit-button{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(2, 15, 75);
+    color:whitesmoke;
+}
+.submit-button:hover{
+    background-color: turquoise;
+}
+
 </style>
 
 <!DOCTYPE html>
@@ -84,7 +102,7 @@ input{
         </div>
         <div class="form-group">
             <p>Which game are you planning to primarily play at the event?</p>
-            <select id="dropdown" name="role" class="form-control" required="">
+            <select id="dropdown" name="role" class="form-control" required="" >
                 <option disabled="" selected="" value="">Which game are you planning to primarily play at the event?</option>
                 <option value="Rocket League">Rocket League</option>
                 <option value="Fortnite">Fortnite</option>

@@ -2,6 +2,7 @@
 body{
     background-color: darkgoldenrod;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #title{
     text-align: center;
@@ -15,9 +16,19 @@ form{
     background-color: gold;
     border-radius: .35rem;
     max-width: 750px;
+    margin: auto;
+    align-items: center;
 }
 #form{
     display: block;
+}
+#survey-form{
+    margin: auto;
+}.form-group{
+    margin: auto;
+}
+label{
+    align-items: center;
 }
 </style>
 
@@ -29,7 +40,7 @@ form{
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Survey Form</title>
-        <h1 id="title">LAN Party Survey</h1>
+        <h1 id="title"><strong>LAN-CON Survey</strong></h1>
         <p id="description">Thanks for sharing your information.</p>
     </head>
 
@@ -50,15 +61,15 @@ form{
             <p>Which game are you planning to primarily play at the event?</p>
             <select id="dropdown" name="role" class="form-control" required="">
                 <option disabled="" selected="" value="">Which game are you planning to primarily play at the event?</option>
-                <option value="student">Rocket League</option>
-                <option value="job">Fortnite</option>
-                <option value="learner">Quake Live</option>
-                <option value="preferNo">Doom Eternal</option>
-                <option value="other">Diablo III</option>
-                <option value="other">League of Legends</option>
-                <option value="other">Hearthstone</option>
-                <option value="other">Unreal Tournament</option>
-                <option value="other">I will participate in tabletop events.</option>
+                <option value="Rocket League">Rocket League</option>
+                <option value="Fortnite">Fortnite</option>
+                <option value="Quake Live">Quake Live</option>
+                <option value="Doom Eternal">Doom Eternal</option>
+                <option value="Diablo III">Diablo III</option>
+                <option value="League of Legends">League of Legends</option>
+                <option value="Hearthstone">Hearthstone</option>
+                <option value="Unreal Tournament">Unreal Tournament</option>
+                <option value="Tabletop">I will participate in tabletop events.</option>
             </select>
         </div>
         <div class="form-group">
@@ -74,7 +85,24 @@ form{
             <label>
                 <input name="user-recommend" value="other" type="radio" class="input-radio">Other</label>
         </div>
-        <div></div>
+        <div class="form-group">
+            <p>"Extra events I'd like to see at LAN-CON" <span class="clue">(Check as many as you'd like)</span></p>
+            <label>
+                <input name="prefer" value="Arcade Room" type="checkbox" class="input-checkbox">Arcade Room</label>
+            <label>
+                <input name="prefer" value="Console Gaming" type="checkbox" class="input-checkbox">Console Gaming</label>
+            <label>
+                <input name="prefer" value="Music Performances" type="checkbox" class="input-checkbox">Music Performances</label>
+            <label>
+                <input name="prefer" value="Vendor Room" type="checkbox" class="input-checkbox">Vendor Room</label>
+            <label>
+                <input name="prefer" value="Cosplay Meetup" type="checkbox" class="input-checkbox">Cosplay Meetup</label>
+            <label>
+                <input name="prefer" value="PC Modding Contest" type="checkbox" class="input-checkbox">PC Modding Contest</label>
+            <label>
+                <input name="prefer" value="Guest Presentations" type="checkbox" class="input-checkbox">Guest Presentations</label>
+            
+        </div>
         <div class="form-group"></div>
     </form>
         

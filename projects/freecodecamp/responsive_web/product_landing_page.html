@@ -2,11 +2,12 @@
     *{
         margin: 0;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
     header{
-        height: 120px;
-        margin-left: 25px;
-        margin-right: 25px;
+        max-height: 120px;
+        margin-left: 15px;
+        margin-right: 15px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -17,19 +18,26 @@
         filter: grayscale(85%);
     }
     nav{
-        font-weight: 300;
-    }
-    #nav-bar{
-        height: 150px;
-    }
-    .nav-link{
-        align-items: flex-end;
+        font-weight: 800;
     }
     ul{
-        width: 30vw;
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: space-around;
+        list-style-type: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 30px;
+    }
+    li{
+        list-style: none;
+        padding-left: 1rem;
+    }
+    a{
+        color: black;
+        text-decoration: none;
     }
     body{
         background: linear-gradient(125deg, rgb(73, 73, 73) , rgb(202, 202, 202));
@@ -137,10 +145,14 @@
 </style>
 <!DOCTYPE html>
 <html lang="en">
-<header id="header" name="header" class="header">
+<head>
     <title>Custom Pipe Lamps</title>
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header id="header" name="header" class="header">
     <img src="https://slayingmold.github.io/projects/freecodecamp/responsive_web/images/lamplogo.png" id="header-img" alt="Custom Lamp Logo">
-    <nav class="nav-bar">
+    <nav id="nav-bar" class="nav-bar">
         <ul>
             <li><a id="nav-link" class="nav-link" href="#Features">Features</a></li>
             <li><a id="nav-link" class="nav-link" href="#Ordering">Ordering</a></li>
@@ -148,13 +160,13 @@
         </ul>
     </nav>
 </header>
-<body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
     <div class="container">
     </div>
     <section id="email-section">
         <div class="form-group">
             <p>Enter your email for more information.</p>
+            <form id="form" action="#">
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
         </div>
         <div>
@@ -162,15 +174,16 @@
                 Submit
             </button>
         </div>
+    </form>
     </section>
     <div class="container">
         <section id="Features">
         
         </section>
         <section class="Our Process">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TAvMOPajJ1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TAvMOPajJ1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
         </section>
-        <section id="ordering" class="ordering">
+        <section id="Ordering" class="Ordering">
             <div class="grid">
                 <div class="product">
                     <div class="item">Desk Lamp</div>

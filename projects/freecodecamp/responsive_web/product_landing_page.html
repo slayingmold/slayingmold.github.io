@@ -66,8 +66,6 @@
     }
     #submit{
         width: 20%;
-    }
-    button{
         color: whitesmoke;
         background-color: rgb(32, 43, 43);
     }
@@ -105,14 +103,6 @@
         text-align: center;
         width: 100%;
     }
-    .ordering{
-        margin-top: 60px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    }
     .product{
         display: flex;
         flex-direction: column;
@@ -122,10 +112,14 @@
         margin: 10px;
         border: 1px solid #000;
         border-radius: 3px;
+        line-height: 2rem;
     }
     ol{
         display: block;
-        list-style: decimal;
+    }
+    .btn{
+        font-weight: 600;
+        font-size: 1em;
     }
     footer{
         color: white;
@@ -170,11 +164,7 @@
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
         </div>
         <div>
-        <input id="submit">
-            <button type="submit" id="submit" class="submit-button">
-                Submit
-            </button>
-        </input>
+        <input id="submit" type="button" value="SUBMIT">
         </div>
     </form>
     </section>
@@ -183,8 +173,9 @@
         
         </section>
         <section class="Our Process">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TAvMOPajJ1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
         </section>
+        <!--video from YouTube-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TAvMOPajJ1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
         <section id="Ordering" class="Ordering">
             <div class="grid">
                 <div class="product">

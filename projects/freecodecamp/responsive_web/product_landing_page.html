@@ -14,7 +14,6 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background: linear-gradient(125deg, rgb(73, 73, 73) , rgb(202, 202, 202));
         width: 100%;
 
     }
@@ -46,8 +45,12 @@
         text-decoration: none;
     }
     body{
+        display: block;
         background: linear-gradient(125deg, rgb(73, 73, 73) , rgb(202, 202, 202));
         
+    }
+    #page{
+        position: relative;
     }
     section{
         margin: 2em;
@@ -149,6 +152,7 @@
 <head>
     <title>Custom Pipe Lamps</title>
 </head>
+<div id="page">
 <body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <header id="header" name="header" class="header">
@@ -161,9 +165,7 @@
         </ul>
     </nav>
 </header>
-    
-    <div class="container">
-    </div>
+
     <section id="email-section">
         <div class="form-group">
             <p>Enter your email for more information.</p>
@@ -224,6 +226,6 @@
     <br>
     <br>
     <footer id="footer"><div>slayingmold 2020</div></footer>
-    
+</div>
 </body>
 </html>

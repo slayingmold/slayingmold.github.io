@@ -30,21 +30,100 @@
     }
     body{
         background: linear-gradient(125deg, rgb(73, 73, 73) , rgb(202, 202, 202));
-    }
-    .container{
-
+        
     }
     #email-section{
         align-items: center;
         text-align: center;
+        max-width: 30%;
+        background-color: whitesmoke;
+        margin: auto;
+        padding: 0.25rem;
+        border-radius: .5em;
+        line-height: 1.5em;
+    }
+    #email{
+        width: 85%;
     }
     #submit{
-        max-width: 200px;
+        width: 85%;
     }
     button{
-        max-width: 100%;
+        width: 85%;
+        color: whitesmoke;
+        background-color: darkslategray;
     }
+    .container{
+        max-width: 1000px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
 
+    }
+    .item{
+        background-color: rgb(59, 59, 59);
+        color: whitesmoke;
+        width: 100%;
+    }
+    .btn{
+        background-color: rgb(73, 73, 73);
+        width: 100%;
+    }
+    .grid{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    #ordering{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .ordering{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100% / 3);
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+    }
+    ol{
+        display: block;
+        list-style: decimal;
+    }
+    footer{
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        size: auto;
+    
+    }
+    #footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        
+    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +136,7 @@
         <ul>
             <li><a class="nav-link" href="#">Features</a></li>
             <li><a class="nav-link" href="#">Ordering</a></li>
-            <li><a class="nav-link" href="#">Pricing</a></li>
+            <li><a class="nav-link" href="#">Reccomended Bulbs</a></li>
         </ul>
     </nav>
 </header>
@@ -76,6 +155,52 @@
             </button>
         </div>
     </section>
+    <div class="container">
+        <section id="Features">
+        
+        </section>
+        <section class="Our Process">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TAvMOPajJ1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="ordering" class="ordering">
+            <div class="grid">
+                <div class="product">
+                    <div class="item">Desk Lamp</div>
+                    <h2>$50</h2>
+                    <ol>
+                        <li>Approximately 12 inches in height</li>
+                        <li>Optional USB outlet available<i>+$20</i></li>
+                        <li>Optional Edison Bulp<i>+$10</i></li>
+                    </ol>
+                    <button class="btn">Order</button>
+                </div>
+                <div class="product">
+                    <div class="item">Side Lamp</div>
+                    <h2>$100</h2>
+                    <ol>
+                        <li>Approximately 36 inches in height</li>
+                        <li>Optional USB outlet available<i>+$20</i></li>
+                        <li>Optional Edison Bulp<i>+$10</i></li>
+                    </ol>
+                    <button class="btn">Order</button>
+                </div>
+                <div class="product">
+                    <div class="item">Floor Lamp</div>
+                    <h2>$200</h2>
+                    <ol>
+                        <li>Approximately 60 inches in height</li>
+                        <li>Optional USB outlet available<i>+$20</i></li>
+                        <li>Optional Edison Bulp<i>+$10</i></li>
+                    </ol>
+                    <button class="btn">Order</button>
+                </div>
+            </div>
+        </section>
+        <section id="Bulbs"></section>
+    </div>
+    <br>
+    <br>
+    <footer id="footer"><div>slayingmold 2020</div></footer>
     
 </body>
 </html>

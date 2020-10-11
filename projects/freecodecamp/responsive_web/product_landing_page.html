@@ -98,17 +98,18 @@
     .grid{
         margin-top: 60px;
         display: flex;
-        flex-direction: row;
+        align-items: center;
         justify-content: center;
         text-align: center;
         width: 100%;
     }
     #Ordering{
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         width: 100%;
     }
-    @media (max-width: 800px){#Ordering{flex-direction: column;}}
+    @media (max-width: 800px){.grid{flex-direction: column;}}
     .product{
         display: flex;
         flex-direction: column;
@@ -184,7 +185,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/TAvMOPajJ1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
         <section id="Ordering" class="Ordering">
             <div class="grid">
-                <div class="product">
+                <div class="product" id="desk">
                     <div class="item">Desk Lamp</div>
                     <h2>$50</h2>
                     <ol>
@@ -194,7 +195,7 @@
                     </ol>
                     <button class="btn">Order</button>
                 </div>
-                <div class="product">
+                <div class="product" id="table">
                     <div class="item">Side Lamp</div>
                     <h2>$100</h2>
                     <ol>
@@ -204,7 +205,7 @@
                     </ol>
                     <button class="btn">Order</button>
                 </div>
-                <div class="product">
+                <div class="product" id="floor">
                     <div class="item">Floor Lamp</div>
                     <h2>$200</h2>
                     <ol>

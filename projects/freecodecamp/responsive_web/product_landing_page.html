@@ -32,8 +32,17 @@
         background: linear-gradient(125deg, rgb(73, 73, 73) , rgb(202, 202, 202));
     }
     .container{
-        max-width: 80%;
-        height: auto;
+
+    }
+    #email-section{
+        align-items: center;
+        text-align: center;
+    }
+    #submit{
+        max-width: 200px;
+    }
+    button{
+        max-width: 100%;
     }
 
 </style>
@@ -58,8 +67,13 @@
     </div>
     <section id="email-section">
         <div class="form-group">
-            <label id="email-label" for="email">Email</label>
+            <p>Enter your email for more information.</p>
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div>
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
         </div>
     </section>
     

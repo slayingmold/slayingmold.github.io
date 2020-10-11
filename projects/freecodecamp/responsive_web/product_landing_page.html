@@ -3,14 +3,30 @@
         margin: 0;
         padding: 0;
     }
-    #header{
+    header{
         height: 120px;
         margin-left: 25px;
         margin-right: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
     img{
         max-height: 85%;
         filter: grayscale(85%);
+    }
+    nav{
+        font-weight: 300;
+    }
+    .nav-link{
+        align-items: flex-end;
+    }
+    ul{
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     body{
         background: linear-gradient(125deg, rgb(73, 73, 73) , rgb(202, 202, 202));
@@ -30,9 +46,9 @@
     <img src="https://slayingmold.github.io/projects/freecodecamp/responsive_web/images/lamplogo.png">
     <nav class="nav-link">
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><a class="nav-link" href="#">Features</a></li>
+            <li><a class="nav-link" href="#">Ordering</a></li>
+            <li><a class="nav-link" href="#">Pricing</a></li>
         </ul>
     </nav>
 </header>

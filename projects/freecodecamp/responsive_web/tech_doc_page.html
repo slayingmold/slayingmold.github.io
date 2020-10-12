@@ -13,8 +13,9 @@
         flex-direction: row;
     }
     #navbar{
-        width: calc(100% / 3);
-        max-width: calc(100% / 3);
+        width: calc(100% / 9);
+        min-width: calc(100% / 9);
+        position: fixed;
         height: fit-content;
         font-weight: 300;
         font-size: 20px;
@@ -22,6 +23,7 @@
         flex-direction: column;
         line-height: 3em;
         outline: auto;
+        background-color: whitesmoke;
     }
     #zas{
         text-align: center;
@@ -30,6 +32,7 @@
         outline: auto;
         font-size: 20px;
         align-items: center;
+        
     }
     .nav-link{
         outline: auto;
@@ -48,7 +51,9 @@
 
     }
     #main-doc{
+        margin-left: calc(100% / 9);
         padding: 2em;
+        position: relative;
     }
     header{
         font-size: 2em;
@@ -67,7 +72,7 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <nav id="navbar">
     <header id="zas">Zombie Apocalypse Survival</header>
-    <div class="nav-link">Introduction</div>
+    <div class="nav-link" href="#Introduction">Introduction</div>
     <div class="nav-link">Shelter</div>
     <div class="nav-link">Survival Supplies</div>
     <div class="nav-link">Weapons</div>

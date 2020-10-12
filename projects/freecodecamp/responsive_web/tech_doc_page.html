@@ -5,6 +5,19 @@
     p{
         text-align: justify;
     }
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    #navbar{
+        width: calc(100% / 3);
+        font-weight: 300;
+        font-size: 20px;
+        display:flex;
+        flex-direction: column;
+        line-height: 3em;
+        outline: auto;
+    }
 </style>
 
 <!DOCTYPE html>
@@ -12,10 +25,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Document</title>
+    <title>Zombie Apocalypse Survival Guide</title>
 </head>
 <body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+    <header>Zombie Apocalypse Survival</header>
+    <div>Introduction</div>
+    <div>Shelter</div>
+    <div>Survival Supplies</div>
+    <div>Weapons</div>
+    <div>Safety In Numbers</div>
+    <div>The Lone Wolf</div>
+    <div>Worst Case Scenario</div>
+
+</nav>
 <main id="main-doc">
     <section class="main-section">
         <header>Weapons</header>

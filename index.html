@@ -44,9 +44,7 @@ body{
     text-align: right;
     font-size: .5em;
 }
-
-
-.nav-bar
+.navbar
 {
     display: grid;
     min-height: 40px;
@@ -74,7 +72,6 @@ body{
 }
 .home:visited{color: white;}
 .home:hover{background-color:rgba(0, 0, 0, 0.75);}
-
 .projects{
     width: auto;
     background: transparent;
@@ -103,7 +100,7 @@ body{
 .contact:hover{background-color:rgba(0, 0, 0, 0.75);}
 
 @media(max-width: 350px) {
-    .nav-bar{
+    .navbar{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
@@ -121,17 +118,27 @@ body{
 }
 .main{
     display:flex;
-    justify-items: center;
     flex-direction: column;
 }
+#welcome-section{
+    height: 100vh;
+}
 .section{
-    width: 42%;
+    width: 50%;
     margin-top: 2em;
     display:flex;
     flex-direction: column;
+    align-self: center;
+    
 }
 .project-title{
     margin-top: 2em;
+}
+h1{
+    margin-bottom: 1.0em;
+}
+#description{
+    padding: 15px;
 }
 footer{
     color: white;
@@ -168,31 +175,45 @@ footer{
 </header>
 <br>
 <nav>
-<div class="nav-bar">
-   <a href="#"> <div class="home">  home </div></a>
-    <a href="#projects"><div class="projects"> projects  </div></a>
-    <a href="#"><div class="contact">  contact </div></a>
+<div class="navbar" id="navbar">
+   <a href="https://github.com/slayingmold" id="profile-link" target="_blank"> <div class="home">  GitHub </div></a>
+    <a href="#projects"><div class="projects"> Projects  </div></a>
+    <a href="#"><div class="contact">  Contact </div></a>
 </div>
 </nav>
 <br>
 <main id="main" class="main">
 <section id="welcome-section" class="section">
-    <h1>Sample Text</h1>
-    <p>Scallywag nipper yo-ho-ho Blimey ballast Pieces of Eight Plate Fleet hornswaggle hulk avast yawl overhaul swab salmagundi sutler port lad Brethren of the Coast rope's end interloper gunwalls barkadeer swing the lead gangplank. Gold Road draft league clipper hail-shot measured fer yer chains transom gangway Plate Fleet boatswain grog blossom spanker come about Corsair ahoy yardarm booty tack nipperkin handsomely capstan run a rig blow the man down brigantine. Hornswaggle Gold Road poop deck lee gabion interloper sheet Pirate Round jolly boat strike colors lugger gally gangplank fore bilged on her anchor man-of-war lanyard lad matey chantey brig tender no prey, no pay bring a spring upon her cable. Hail-shot yo-ho-ho gangway reef sails keelhaul crimp Barbary Coast American Main haul wind mizzenmast draft capstan six pounders hardtack clap of thunder heave to lad pirate skysail cackle fruit league list swab provost. Jack Shiver me timbers scallywag rope's end Corsair Cat o'nine tails lugger transom pirate ballast keel gally crack Jennys tea cup topmast maroon holystone bilge rat plunder reef fluke Barbary Coast flogging spyglass rutters. Jib schooner Yellow Jack hempen halter hornswaggle scallywag fathom Blimey galleon Davy Jones' Locker Chain Shot tack salmagundi mizzenmast line coxswain spirits snow port cog clap of thunder quarterdeck case shot Plate Fleet.
+    <h1>Welcome</h1>
+    <p id="description">Scallywag nipper yo-ho-ho Blimey ballast Pieces of Eight Plate Fleet hornswaggle hulk avast yawl overhaul swab salmagundi sutler port lad Brethren of the Coast rope's end interloper gunwalls barkadeer swing the lead gangplank. Gold Road draft league clipper hail-shot measured fer yer chains transom gangway Plate Fleet boatswain grog blossom spanker come about Corsair ahoy yardarm booty tack nipperkin handsomely capstan run a rig blow the man down brigantine. Hornswaggle Gold Road poop deck lee gabion interloper sheet Pirate Round jolly boat strike colors lugger gally gangplank fore bilged on her anchor man-of-war lanyard lad matey chantey brig tender no prey, no pay bring a spring upon her cable. Hail-shot yo-ho-ho gangway reef sails keelhaul crimp Barbary Coast American Main haul wind mizzenmast draft capstan six pounders hardtack clap of thunder heave to lad pirate skysail cackle fruit league list swab provost. Jack Shiver me timbers scallywag rope's end Corsair Cat o'nine tails lugger transom pirate ballast keel gally crack Jennys tea cup topmast maroon holystone bilge rat plunder reef fluke Barbary Coast flogging spyglass rutters. Jib schooner Yellow Jack hempen halter hornswaggle scallywag fathom Blimey galleon Davy Jones' Locker Chain Shot tack salmagundi mizzenmast line coxswain spirits snow port cog clap of thunder quarterdeck case shot Plate Fleet.
+        <br>
+        ballast Sea Legs jolly boat gangway parley bounty wench American Main. Keel bounty Privateer knave ballast handsomely snow Jack Tar Gold Road grog blossom mizzen crack Jennys tea cup American Main Sink me overhaul yawl keelhaul jib holystone gibbet topgallant stern tender pirate. Jack Ketch main sheet grog strike colors quarterdeck brig Jolly Roger boom gally fluke gunwalls yard lateen sail jib transom Admiral of the Black square-rigged ahoy fire in the hole bucko grog blossom spike warp skysail. Heave to gangplank grog Jack Tar knave six pounders pillage scourge of the seven seas hornswaggle sheet Blimey avast mutiny matey loot nipperkin bilged on her anchor hearties pink chantey hang the jib belay transom execution dock. Keel brig swab run a shot across the bow maroon gunwalls bilged on her anchor provost Sink me booty deadlights Davy Jones' Locker grapple dance the hempen jig gaff Cat o'nine tails list dead men tell no tales black spot take a caulk league hogshead fluke hempen halter. Take a caulk squiffy six pounders avast handsomely reef flogging league cackle fruit reef sails haul wind provost crack Jennys tea cup long boat crow's nest Shiver me timbers me bilged on her anchor Brethren of the Coast snow poop deck mizzenmast jib Cat o'nine tails.
+        Grapple cable cog plunder Letter of Marque rum gangway scourge of the seven seas. Nipperkin bilged on her anchor handsomely shrouds hang the jib snow hands long clothes. Dead men tell no tales Privateer schooner aye hands maroon crow's nest bring a spring upon her cable. Ye lanyard fluke strike colors killick bounty square-rigged pillage. Booty jury mast hang the jib log grapple draft run a shot across the bow lanyard.
+
+Lee bilged on her anchor killick bucko walk the plank scuppers square-rigged pressgang. Skysail reef swab Gold Road parrel draught jolly boat stern. Six pounders keelhaul fathom smartly maroon matey gally scuttle. Shrouds smartly topgallant Sail ho hang the jib bilge water blow the man down grog blossom. Take a caulk league Davy Jones' Locker Barbary Coast spyglass tackle execution dock interloper.
     </p>
+    
 </section>
 <section id="projects" class="section">
     <div class="project-title">
         <h1>Tribute to Nikola Tesla</h1>
-        <p>Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <div class="project-tile"></div>
     </div>
     <div class="project-title">
         <h1>LAN-CON Survey Form</h1>
-        <p>Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <div class="project-tile"></div>
+    </div>
+    <div class="project-title">
+        <h1>Pipe Lamp Landing Page</h1>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <div class="project-tile"></div>
     </div>
     <div class="project-title">
         <h1>Zombie Apocalypse Survival Guide</h1>
-        <p>Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <div class="project-tile"></div>
     </div>
 </section>
 </main>

@@ -9,6 +9,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     color: whitesmoke;
 }
+
 .image-me{
     display: block;
     max-width: 12em;
@@ -44,22 +45,33 @@ body{
     text-align: right;
     font-size: .5em;
 }
+
+#navbar{
+    position: fixed;
+    background-color: rgb(73,73,73);
+    width:100%
+}
 .navbar
 {
-    display: grid;
-    min-height: 40px;
-    max-width: 100%;
+    display: block;
+    z-index: 1;
+        
+}
+.bar{
+    display:grid;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    margin-top: 15px;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     grid-template-areas: "home projects contact";
     grid-column-gap: 10px;
     justify-self: center;
-    max-height: 50px;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.45);
     font-size: 20px;
+    
 }
-
 .home{
     width: auto;
     background: transparent;
@@ -99,9 +111,11 @@ body{
 .contact:visited{color: white;}
 .contact:hover{background-color:rgba(0, 0, 0, 0.75);}
 
-@media(max-width: 350px) {
-    .navbar{
+@media(max-width: 800px) {
+    .bar{
         grid-template-columns: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
             "home"
@@ -113,13 +127,15 @@ body{
 {
     color: white;
     text-align: justify;
-    line-height: 1.5em;   
+    line-height: 1.5em;
+    position: relative;   
+    margin-top: 275px;
     
 }
 .main{
     display:flex;
     flex-direction: column;
-}
+    }
 #welcome-section{
     height: 100vh;
 }
@@ -165,20 +181,18 @@ footer{
 
 <body lang="en" translate="no">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<header>
-    <img src="https://slayingmold.github.io/images/me.jpg" alt="me" class="image-me me-border">
+<nav>
+    <div class="navbar" id="navbar">
+    <img src="https://slayingmold.github.io/images/me.jpg" alt="me" class="image-me me-border" id="image-me">
     
     <div id="quote-container">
         <div id="tesla-quote"><h1>In the twenty-first century, the robot will take the place which slave labor occupied in ancient civilization.</h1></div>
-        <div id="quote-person"><h2>-Nikola Tesla</h2></div>
-    </div>
-</header>
-<br>
-<nav>
-<div class="navbar" id="navbar">
+        <div id="quote-person"><h2>-Nikola Tesla</h2></div></div>
+    <div id="bar" class="bar">
    <a href="https://github.com/slayingmold" id="profile-link" target="_blank"> <div class="home">  GitHub </div></a>
     <a href="#projects"><div class="projects"> Projects  </div></a>
     <a href="#"><div class="contact">  Contact </div></a>
+</div>
 </div>
 </nav>
 <br>
@@ -197,22 +211,22 @@ Lee bilged on her anchor killick bucko walk the plank scuppers square-rigged pre
 <section id="projects" class="section">
     <div class="project-title">
         <h1>Tribute to Nikola Tesla</h1>
-        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy <a href="https://slayingmold.github.io/projects/freecodecamp/responsive_web/tesla_tribute.html" target="_blank" >Click here to check out this project.</a></p>
         <div class="project-tile"></div>
     </div>
     <div class="project-title">
         <h1>LAN-CON Survey Form</h1>
-        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy <a href="https://slayingmold.github.io/projects/freecodecamp/responsive_web/survey_form.html" target="_blank" >Click here to check out this project.</a></p>
         <div class="project-tile"></div>
     </div>
     <div class="project-title">
         <h1>Pipe Lamp Landing Page</h1>
-        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy.<a href="https://slayingmold.github.io/projects/freecodecamp/responsive_web/product_landing_page.html" target="_blank" >Click here to check out this project.</a></p>
         <div class="project-tile"></div>
     </div>
     <div class="project-title">
         <h1>Zombie Apocalypse Survival Guide</h1>
-        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+        <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy. <a href="https://slayingmold.github.io/projects/freecodecamp/responsive_web/tech_doc_page.html" target="_blank" >Click here to check out this project.</a></p>
         <div class="project-tile"></div>
     </div>
 </section>

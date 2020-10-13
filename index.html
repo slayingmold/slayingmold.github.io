@@ -1,4 +1,9 @@
 <style>
+*{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 body{
     background-image: url("https://slayingmold.github.io/images/evolution_dark.png");
     font-family:Arial, Helvetica, sans-serif;
@@ -107,14 +112,26 @@ body{
             "contact";
             }
 }
-main
+#main
 {
     color: white;
     text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
+    line-height: 1.5em;   
     
-    
+}
+.main{
+    display:flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.section{
+    width: 42%;
+    margin-top: 2em;
+    display:flex;
+    flex-direction: column;
+}
+.project-title{
+    margin-top: 2em;
 }
 footer{
     color: white;
@@ -153,17 +170,33 @@ footer{
 <nav>
 <div class="nav-bar">
    <a href="#"> <div class="home">  home </div></a>
-    <a href="https://slayingmold.github.io/projects/index.html"><div class="projects"> projects  </div></a>
+    <a href="#projects"><div class="projects"> projects  </div></a>
     <a href="#"><div class="contact">  contact </div></a>
 </div>
 </nav>
 <br>
-<section id="welcome-section">
+<main id="main" class="main">
+<section id="welcome-section" class="section">
     <h1>Sample Text</h1>
+    <p>Scallywag nipper yo-ho-ho Blimey ballast Pieces of Eight Plate Fleet hornswaggle hulk avast yawl overhaul swab salmagundi sutler port lad Brethren of the Coast rope's end interloper gunwalls barkadeer swing the lead gangplank. Gold Road draft league clipper hail-shot measured fer yer chains transom gangway Plate Fleet boatswain grog blossom spanker come about Corsair ahoy yardarm booty tack nipperkin handsomely capstan run a rig blow the man down brigantine. Hornswaggle Gold Road poop deck lee gabion interloper sheet Pirate Round jolly boat strike colors lugger gally gangplank fore bilged on her anchor man-of-war lanyard lad matey chantey brig tender no prey, no pay bring a spring upon her cable. Hail-shot yo-ho-ho gangway reef sails keelhaul crimp Barbary Coast American Main haul wind mizzenmast draft capstan six pounders hardtack clap of thunder heave to lad pirate skysail cackle fruit league list swab provost. Jack Shiver me timbers scallywag rope's end Corsair Cat o'nine tails lugger transom pirate ballast keel gally crack Jennys tea cup topmast maroon holystone bilge rat plunder reef fluke Barbary Coast flogging spyglass rutters. Jib schooner Yellow Jack hempen halter hornswaggle scallywag fathom Blimey galleon Davy Jones' Locker Chain Shot tack salmagundi mizzenmast line coxswain spirits snow port cog clap of thunder quarterdeck case shot Plate Fleet.
+    </p>
 </section>
-<main>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et leo duis ut diam. Metus aliquam eleifend mi in nulla posuere. Viverra nam libero justo laoreet sit amet cursus sit. Nulla facilisi etiam dignissim diam. Vel pretium lectus quam id leo. Mattis aliquam faucibus purus in massa tempor. Nibh cras pulvinar mattis nunc sed blandit libero. Ut venenatis tellus in metus. In cursus turpis massa tincidunt dui ut ornare. Nunc mattis enim ut tellus elementum sagittis. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Ut morbi tincidunt augue interdum velit. Montes nascetur ridiculus mus mauris vitae. Risus quis varius quam quisque id diam. Ornare suspendisse sed nisi lacus sed viverra tellus in. Amet nisl suscipit adipiscing bibendum est ultricies integer quis.
+<section id="projects" class="section">
+    <div class="project-title">
+        <h1>Tribute to Nikola Tesla</h1>
+        <p>Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+    </div>
+    <div class="project-title">
+        <h1>LAN-CON Survey Form</h1>
+        <p>Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+    </div>
+    <div class="project-title">
+        <h1>Zombie Apocalypse Survival Guide</h1>
+        <p>Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy</p>
+    </div>
+</section>
+</main>
 
-    Cras adipiscing enim eu turpis egestas. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Pellentesque id nibh tortor id aliquet lectus proin. Tellus cras adipiscing enim eu. Ultricies mi eget mauris pharetra et ultrices neque ornare. Quam id leo in vitae turpis massa sed elementum. Suspendisse sed nisi lacus sed viverra tellus. Ipsum a arcu cursus vitae. Senectus et netus et malesuada. Cursus metus aliquam eleifend mi. Tellus in hac habitasse platea dictumst vestibulum rhoncus. Gravida cum sociis natoque penatibus et magnis dis parturient. Risus in hendrerit gravida rutrum quisque. Quam quisque id diam vel quam. Gravida dictum fusce ut placerat orci nulla. Ultricies mi quis hendrerit dolor magna eget est lorem.</main>
 <br>
 <br>
     <footer id="footer"><div>slayingmold 2020</div></footer>

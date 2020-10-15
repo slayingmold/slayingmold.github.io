@@ -195,29 +195,47 @@ body{
     display: flex;
     flex-direction: row;
 }
+.tesla{
+    display: flex;
+    flex-direction: row;
+}
+#n-tesla{
+    width:auto;
+    height:200px;
+   filter: drop-shadow(5px 5px 5px black);
+}
 #lan-sign{
     width:auto;
     height: 200px;
-    filter:grayscale(100%);
+    filter:grayscale(100%) drop-shadow(5px 5px 5px black);
 }
 #bulb{
     width: auto;
     height: 200px;
-    filter: grayscale(100%);
+    filter: grayscale(100%) drop-shadow(5px 5px 5px black);
     
     
 }
 #zas-logo{
     width:200px;
     height: auto;
-    filter: invert(85%);
+    filter: invert(75%);
     
+    
+}
+#n-tesla:hover{
+    filter:sepia(80%) drop-shadow(5px 5px 5px black);
+}
+#lan-sign:hover{
+    filter: drop-shadow(5px 5px 5px black); 
 }
 #bulb:hover{
     filter: drop-shadow(5px 5px 5px black); 
 }
 #zas-logo:hover{
-    filter: drop-shadow(5px 5px 5px black);
+    filter: invert(100%) drop-shadow(5px 5px 5px black);
+    color:rgba(182, 4, 4, 0.65);
+
 }
 
 h1{
@@ -276,11 +294,16 @@ footer{
 <br>
 <section id="projects" class="section">
     <div id="projects-marker" class="projects-marker">Projects</div>
-    <div class="project-title">
+        <div class="project-title">
+    <div id="tesla" class="tesla">
+        <div id="project-info" class="project-info">
         <h1>Tribute to Nikola Tesla</h1>
         <p id="description">Transom yawl Davy Jones' Locker reef me poop deck mizzen capstan loot tack spirits hempen halter come about handsomely gally piracy <a href="https://slayingmold.github.io/projects/freecodecamp/responsive_web/tesla_tribute.html" target="_blank" >Click here to check out this project.</a></p>
-        
+        </div>
+        <div id="tesla-img" class="tesla-img"><img src="https://slayingmold.github.io/projects/freecodecamp/responsive_web/images/N.Tesla.JPG" alt="Nikola Tesla" id="n-tesla"></div>    
     </div>
+</div>
+
     <div class="project-title">
     <div id="LAN" class="LAN">
         <div id="lan-img" class="lan-img"><img src="https://slayingmold.github.io/projects/freecodecamp/responsive_web/images/lan-hi.png" alt="LAN Sign" id="lan-sign"></div>

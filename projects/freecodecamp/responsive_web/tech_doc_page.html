@@ -42,7 +42,7 @@
         color: whitesmoke;
     }
     .nav-box{
-        outline: auto;
+        outline: 0;
         padding-left: 15px;
     }
     .nav-box:hover{
@@ -65,7 +65,43 @@
         padding: 2em;
         position: relative;
     }
-    @media(max-width: 800px){#main-doc{text-justify: justify;}}
+    @media(max-width: 1500px){
+        
+        #main-doc{
+                text-justify: justify;
+                margin: 120px 10px 10px 10px;
+                z-index: -1; 
+                
+    
+                }
+        #navbar{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            width:95%;
+            background-color: whitesmoke;
+            font-size: 15px;
+
+        }
+        .nav-box{
+            margin:auto;
+            width: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+
+        }
+        .bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+        } 
+        #zas-logo{
+            display: none;
+        }
+    
+    }
     header{
         font-size: 2em;
         font-weight: 550;
@@ -101,6 +137,7 @@
 <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 <nav id="navbar">
     <header id="zas">Zombie Apocalypse Survival</header>
+    <div class="bar">
     <a class="nav-link" href="#Introduction"><div class="nav-box">Introduction</div></a>
     <a class="nav-link" href="#Shelter"><div class="nav-box">Shelter</div></a>
     <a class="nav-link" href="#Survival_Supplies"><div class="nav-box">Survival Supplies</div></a>
@@ -108,8 +145,9 @@
     <a class="nav-link" href="#Safety_In_Numbers"><div class="nav-box">Safety In Numbers</div></a>
     <a class="nav-link" href="#The_Lone_Wolf"><div class="nav-box">The Lone Wolf</div></a>
     <a class="nav-link" href="#Worst_Case_Scenario"><div class="nav-box">Worst Case Scenario</div></a>
+    </div>
     <div class="zas logo"><img src="https://slayingmold.github.io/projects/freecodecamp/responsive_web/images/589deb3b64b351149f22a869.png" alt="ZAS Logo" id="zas-logo"></div>
-
+    
 </nav>
 <main id="main-doc">
     <section class="main-section" id="Introduction">
